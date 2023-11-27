@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>These Are My Colors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lp.css">
+</head>
+<body>
+    <div class="lp-c-container">
+        <div class="lp-c-column text">
+            <h1>These are my colors</h1>
+            <h2>My color is <span id="color-text">Black</span></h2>
+        </div>
+        <div class="lp-c-column">
+            <input type="color" name="color" id="color">
+        </div>
+    </div>    
+       <script src="ntc.js"></script>
+       <script>
+        var input = document.getElementById("color");
+        var color = input.value;
+        var ctext = document.getElementById("color-text");
+        input.addEventListener('input', function() {
+            color = input.value;
+            document.documentElement.style.setProperty("--primary", color);
+            var cname  = ntc.name(color)[1];
+            ctext.innerText = cname;
+            document.title = "These Are My Colors | " + cname;
+        });
+       </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+:root {
+    --primary: #000000;
+}
+body {
+    color: var(--primary);
+}
+.text {
+    margin-top: 20vh;
+}

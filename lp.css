@@ -1,0 +1,44 @@
+/* Default imports & settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+/* Basic */
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Column system */
+
+.lp-c-container {
+    display: flex;
+    gap: 4%;
+}
+.lp-c-column {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    padding: 20px;
+}
